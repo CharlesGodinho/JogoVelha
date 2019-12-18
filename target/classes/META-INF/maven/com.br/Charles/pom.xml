@@ -119,17 +119,15 @@
 				<version>2.3.1</version>
 				<executions>
 					<execution>
-						<id>xjc-schema</id>
+						<id>xjc</id>
 						<goals>
 							<goal>xjc</goal>
 						</goals>
 					</execution>
 				</executions>
 				<configuration>
-					<sources>
-						<source>src/main/resources/xsds</source>
-					</sources>
-					<packageName>com.br.charles.game_ws</packageName>
+					<schemaDirectory>${project.basedir}/src/main/resources/</schemaDirectory>
+					<outputDirectory>${project.basedir}/src/main/java</outputDirectory>
 					<clearOutputDir>false</clearOutputDir>
 				</configuration>
 			</plugin>
