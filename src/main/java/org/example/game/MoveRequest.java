@@ -2,7 +2,7 @@
 // Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.2.11 
 // Consulte <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
-// Gerado em: 2019.12.17 às 09:27:49 PM BRST 
+// Gerado em: 2019.12.18 às 02:19:46 PM BRST 
 //
 
 
@@ -27,7 +27,7 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence&gt;
  *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *         &lt;element name="player" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
- *         &lt;element name="position" type="{http://www.example.org/game}Position"/&gt;
+ *         &lt;element name="position" type="{http://www.example.org/game}Position" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -49,7 +49,6 @@ public class MoveRequest {
     protected String id;
     @XmlElement(required = true)
     protected String player;
-    @XmlElement(required = true)
     protected Position position;
 
     /**

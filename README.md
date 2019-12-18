@@ -4,8 +4,9 @@ Tecnologias : Spring Boot, Spring MVC, H2 Database, JAXB
 
 Build:
 
-*Requirements*
+*Requerimentos*
 Java
 maven
 
-Run command mvn clean package
+Execute o comando "mvn clean install"
+Depois execute "mvn spring-boot:run"

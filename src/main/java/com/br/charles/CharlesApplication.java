@@ -6,7 +6,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = { "com.br.charles.Service", "com.br.charles.Controller" })
+@ComponentScan(basePackages = { "com.br.charles.Service","com.br.charles", "com.br.charles.Controller" })
 public class CharlesApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
